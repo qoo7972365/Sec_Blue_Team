@@ -13,3 +13,7 @@ GCP : elk設置 status error 7 日誌告警
 
 蜜罐方面:
 使用hfish全網段覆蓋
+
+elk方面:
+全局DNS收集 紀錄告警
+domain: (*.oast.* OR *.dnslog.cn OR webhook.site OR httpbin.org OR canarytokens.com OR interact.sh OR axss.xyz OR ceye.io OR bxss.me)
