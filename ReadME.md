@@ -27,3 +27,4 @@ domain: (*.oast.* OR *.dnslog.cn OR webhook.site OR httpbin.org OR canarytokens.
 
 Linux 溯源
 lsof +L1  查詢已被刪除inode但文件還在
+文件時間更改過，還是可以根據inode來識別大概是什麼時候建立的檔案
