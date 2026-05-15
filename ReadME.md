@@ -21,3 +21,9 @@ Status 7 (Permission Denied)：你登入了，但你沒有這項資源的存取�
 elk方面:
 全局DNS收集 紀錄告警
 domain: (*.oast.* OR *.dnslog.cn OR webhook.site OR httpbin.org OR canarytokens.com OR interact.sh OR axss.xyz OR ceye.io OR bxss.me)
+
+
+
+
+Linux 溯源
+lsof +L1  查詢已被刪除inode但文件還在
