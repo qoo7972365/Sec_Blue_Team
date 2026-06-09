@@ -9,10 +9,13 @@ Linux增加history.sh，錄製所有tty 操作紀錄
 全時段 非ssh 跳板機登入告警
 
 雲方案:
-GCP : elk設置 protoPayload.status.code  日誌告警
-Status 16 (Unauthenticated)：你沒登入，或是 Token 失效（「你是誰？」）。
+GCP Audit :
+  elk設置 protoPayload.status.code  日誌告警
+  Status 16 (Unauthenticated)：你沒登入，或是 Token 失效（「你是誰？」）。
+  Status 7 (Permission Denied)：你登入了，但你沒有這項資源的存取權（「你不能動這個資源」）。
 
-Status 7 (Permission Denied)：你登入了，但你沒有這項資源的存取權（「你不能動這個資源」）。
+#從GCP console使用指定port 登入vm
+protoPayload.serviceName : "iap.googleapis.com"
 
 
 蜜罐方面:
