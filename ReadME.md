@@ -13,7 +13,8 @@ GCP Audit :
   elk設置 protoPayload.status.code  日誌告警
   Status 16 (Unauthenticated)：你沒登入，或是 Token 失效（「你是誰？」）。
   Status 7 (Permission Denied)：你登入了，但你沒有這項資源的存取權（「你不能動這個資源」）。
-
+  GCP組織project 設置 log router 將所有組織下子項目日誌傳輸到統一個bucket
+  
 #從GCP console使用指定port 登入vm
 protoPayload.serviceName : "iap.googleapis.com"
 
