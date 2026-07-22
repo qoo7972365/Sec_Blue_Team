@@ -20,6 +20,10 @@ GCP Audit :
 protoPayload.serviceName : "iap.googleapis.com"
 
 
+AWS Audit:
+  所有linux 安裝SSM，並在SSM開啟 DHMC 自動管理 跟 自動更新
+
+
 蜜罐方面:
 使用hfish全網段覆蓋
 
